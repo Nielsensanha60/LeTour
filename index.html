@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tour Fammes - classificação</title>
+    <style>
+        *{
+            box-sizing: border-box;
+        }
+        html{
+            scroll-behavior: smooth;
+        }
+        body{
+            margin: 0;
+            font-family: Arial, Helvetica, sans-serif;
+            color: black;
+            background: #fff;
+        }
+        nav{
+            position: fixed;
+            top: 0;
+            width: 100%;
+            height: 90px;
+            background: #0f0f0f;
+            color:#dbdada;
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            padding: 0 8%;
+            transition: height 0.4s;
+            z-index: 10px;
+        }
+
+        nav.pequena{
+            height: 55px;
+        }
+        nav a{
+        color: #f3f1f1;
+        text-decoration: none;
+        margin-left: 20px;
+    }
+
+    nav .logo{
+        font-weight: bold;
+        color: aquamarine;
+    }
+
+    .hero{
+        height: 100vh;
+        background: linear-gradient(135deg,#d6e692,#fff);
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        text-align: center;
+        padding: 25px;
+    }
+
+    header h1{
+        font-size: clamp(36px,7vw,80px);
+    }
+    </style>
+</head>
+<body>
+    <style>
+        /*aqui vem o css */
+    </style>
+    </head>
+</body>
+
+<nav id="navbar">
+    <div class="logo">LE TOUR FEMMES</div>
+    <div>
+        <a href="#classificacao">classificacao</a>
+        <a href="#grafios">Gráficos</a>
+    </div>
+</nav>
+<header class="hero">
+    <div>
+    <h1>General Classificacao</h1>
+    <p>classificacao após a etapa 6</p>
+    <a href="#classificacao">ver Classificacao</a>
+</div>
+</header>
+<main>
+    O que é Lorem Ipsum?
+Lorem Ipsum é simplesmente uma simulação de texto da indústria tipográfica e de impressos, e vem sendo utilizado desde o século XVI, quando um impressor desconhecido pegou uma bandeja de tipos e os embaralhou para fazer um livro de modelos de tipos. Lorem Ipsum sobreviveu não só a cinco séculos, como também ao salto para a editoração eletrônica, permanecendo essencialmente inalterado. Se popularizou na década de 60, quando a Letraset lançou decalques contendo passagens de Lorem Ipsum, e mais recentemente quando passou a ser integrado a softwares de editoração eletrônica como Aldus PageMaker.
+
+Porque nós o usamos?
+É um fato conhecido de todos que um leitor se distrairá com o conteúdo de texto legível de uma página quando estiver examinando sua diagramação. A vantagem de usar Lorem Ipsum é que ele tem uma distribuição normal de letras, ao contrário de "Conteúdo aqui, conteúdo aqui", fazendo com que ele tenha uma aparência similar a de um texto legível. Muitos softwares de publicação e editores de páginas na internet agora usam Lorem Ipsum como texto-modelo padrão, e uma rápida busca por 'lorem ipsum' mostra vários websites ainda em sua fase de construção. Várias versões novas surgiram ao longo dos anos, eventualmente por acidente, e às vezes de propósito (injetando humor, e coisas do gênero).
+
+
+De onde ele vem?
+Ao contrário do que se acredita, Lorem Ipsum não é simplesmente um texto randômico. Com mais de 2000 anos, suas raízes podem ser encontradas em uma obra de literatura latina clássica datada de 45 AC. Richard McClintock, um professor de latim do Hampden-Sydney College na Virginia, pesquisou uma das mais obscuras palavras em latim, consectetur, oriunda de uma passagem de Lorem Ipsum, e, procurando por entre citações da palavra na literatura clássica, descobriu a sua indubitável origem. Lorem Ipsum vem das seções 1.10.32 e 1.10.33 do "de Finibus Bonorum et Malorum" (Os Extremos do Bem e do Mal), de Cícero, escrito em 45 AC. Este livro é um tratado de teoria da ética muito popular na época da Renascença. A primeira linha de Lorem Ipsum, "Lorem Ipsum dolor sit amet..." vem de uma linha na seção
+</main>
+<script>
+    /* Aqui vem o nosso js */
+    const navbar = document.getElementById("navbar");
+    window.addEventListener("scroll" funtion(){
+        if(window.scroll>50){
+        navbar.classList.add("pequena");
+    }else{
+        navbar.classList.remove("pequena");
+    }
+});
+</script>
+</html>
